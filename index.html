@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Inventory Ledger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📦 Inventory Ledger</h1>
+<!-- Shop Information -->
+<header id="shop-info">
+  <h2>🏪 BU Gift Shop</h2>
+  <p>Address: Jarun, Konabari Road, Kashimpur, Gazipur, Bangladesh</p>
+  <p>Postal Code: 1346</p>
+  <p>Phone: 01937194449</p>
+  <p>We sell: Sunglasses, Watches, Jars, and more!</p>
+</header>
+
+
+  <!-- Add Item Form -->
+  <form id="add-form">
+    <input type="text" id="name" placeholder="Item name" required />
+    <input type="number" id="qty" placeholder="Quantity" min="1" required />
+    <input type="number" id="buy" placeholder="Buy price" step="0.01" required />
+    <input type="number" id="sell" placeholder="Sell price" step="0.01" required />
+    <button type="submit">Add Item</button>
+  </form>
+
+  <!-- Dark Mode Toggle -->
+  <button id="toggle-dark">🌙 Toggle Dark Mode</button>
+
+  <!-- Search Bar -->
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search item by name" />
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Inventory List -->
+  <ul id="inv-list"></ul>
+
+  <!-- Profit & Wallet -->
+  <p id="profit-summary">Total profit/loss: $0.00</p>
+  <p id="wallet-summary">Wallet balance: $0.00</p>
+
+  <!-- Reset Profit -->
+  <div style="text-align:center; margin-top:1em;">
+    <button id="reset-profit">Reset Profit/Loss</button>
+  </div>
+
+  <!-- Wallet Controls -->
+  <h2>🏦 Wallet Controls</h2>
+  <form id="wallet-form">
+    <input type="number" id="wallet-amount" placeholder="Amount" step="0.01" required />
+    <button type="button" id="wallet-add">Deposit</button>
+    <button type="button" id="wallet-remove">Withdraw</button>
+  </form>
+
+  <!-- Bills Section -->
+  <h2>💸 Bills</h2>
+  <form id="bill-form">
+    <input type="text" id="bill-name" placeholder="Bill name" required />
+    <input type="number" id="bill-cost" placeholder="Cost" step="0.01" required />
+    <button type="submit">Add Bill</button>
+  </form>
+  <ul id="bill-list"></ul>
+
+<!-- Transaction History -->
+<h2>📜 Transaction History</h2>
+<ul id="history-list"></ul>
+
+<!-- Clear History Button -->
+<form id="clear-history-form" style="text-align:center; margin-top:1em;">
+  <button type="submit">Clear History</button>
+</form>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

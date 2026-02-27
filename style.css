@@ -1,0 +1,136 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 2em;
+  background: #f0f2f5;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+form input, form button {
+  margin: 0.4em;
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #0078d7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005fa3;
+}
+
+#toggle-dark {
+  display: block;
+  margin: 0 auto 1em auto;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 0.5em 0;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.low {
+  background: #ffe0e0;
+}
+
+button.remove { background: #d9534f; color: white; }
+button.sell { background: #5cb85c; color: white; }
+button.update { background: #f0ad4e; color: white; }
+button.pay { background: #5cb85c; color: white; }
+
+.profit { color: green; font-weight: bold; }
+.loss { color: red; font-weight: bold; }
+
+#profit-summary, #wallet-summary {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* History */
+#history-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+#history-list li {
+  background: #f9f9f9;
+  margin: 0.4em 0;
+  padding: 0.6em;
+  border-radius: 6px;
+  font-size: 0.9em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+body.dark #history-list li {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+/* Dark mode */
+body.dark { background: #121212; color: #eee; }
+body.dark li { background: #1e1e1e; color: #eee; }
+body.dark form button { background: #444; }
+body.dark #toggle-dark { background: #0078d7; }
+
+#clear-history-form button {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#clear-history-form button:hover {
+  background: #b52b27;
+}
+
+#shop-info {
+  text-align: center;
+  background: #0078d7;
+  color: white;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+#shop-info h2 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+#shop-info p {
+  margin: 0.3em 0;
+}
